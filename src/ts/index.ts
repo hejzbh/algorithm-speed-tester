@@ -1,3 +1,9 @@
-const x: string = "Hazim";
+import Controller from "./controllers/Controller";
+import View from "./views/View";
 
-console.log(x);
+const controller = new Controller();
+const view = new View();
+
+(() => {
+  view.bindAddFunction(controller.addFunction);
+})();

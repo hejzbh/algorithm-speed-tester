@@ -1,0 +1,3 @@
+class FunctionModel {
+  constructor() {}
+}
