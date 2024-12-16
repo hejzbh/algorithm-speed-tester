@@ -1,13 +1,20 @@
 // View.ts
 import { AddFunctionParams } from "../controllers/Controller";
+import TextareaModel from "../models/TextareaModel";
 
 class View {
   _formElement = document.querySelector("form")!;
   _functionBodyInput = document.querySelector(
     "#functionBody"
   ) as HTMLTextAreaElement;
+  textarea: any;
 
-  constructor() {}
+  constructor() {
+    this.textarea = new TextareaModel(
+      this._formElement.querySelector("textarea") as HTMLTextAreaElement,
+      "{ \n //Function body \n}"
+    );
+  }
 
   bindAddFunction(handler: (params: AddFunctionParams) => void) {
     this._formElement.addEventListener("submit", (event) => {
