@@ -1,0 +1,24 @@
+{
+  "name": "algorithm-speed-tester",
+  "version": "1.0.0",
+  "description": "Application for testing performance of algorithms",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hejzbh/algorithm-speed-tester.git"
+  },
+  "author": "Hazim Tulumovic - hejzbh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hejzbh/algorithm-speed-tester/issues"
+  },
+  "homepage": "https://github.com/hejzbh/algorithm-speed-tester#readme",
+  "devDependencies": {
+    "parcel": "^2.13.2",
+    "typescript": "^5.7.2"
+  }
+}
