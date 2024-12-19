@@ -22,3 +22,68 @@ textarea {
     
     
 }
+
+.functions-list {
+    list-style: none;
+    margin-top: 15px;
+    max-height: 300px;
+    overflow-y: scroll;
+
+
+}
+
+.functions-list li {
+    padding: 7px 15px;
+    border-radius: 15px;
+    background: rgb(67, 70, 88);
+    color: white;
+    position: relative;
+    margin: 5px 0;
+}
+
+.functions-list li .title {
+    font-size: 15px;
+}
+
+
+.functions-list li .delete-btn{
+    background: red;
+    padding: 5px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    transition: 0.3s ease-in-out all;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    right: 15px;
+}
+
+.functions-list li .delete-btn:hover{
+    opacity: .7;
+}
+
+
+form button {
+    width: 48%;
+    padding: 7px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover{
+    opacity: .7;
+}
+
+
+.add-btn{
+    background: #006ab0;
+   
+}
+
+.test-btn{
+    background: limegreen;
+}
